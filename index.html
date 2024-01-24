@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin:0;
+  perspective: 1000px;
+}
+.header {
+  background-color: #fff9c8;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace; 
+
+}
+.row {
+  display: flex;
+}
+.column {
+  padding: 10px;
+  height: 80vh;
+}
+
+.column.left {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   background-color: #b6d0f7;
+}
+
+.column.middle {
+  flex: 2;
+  flex: 2;
+  flex: 2;
+}
+.column.right {
+   flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   background-color: #f8e5ed;
+}
+.footer {
+  background-color: #fff9c8;
+  padding: 10px;
+  text-align: center;
+  height: 20vh;
+  color: #b6d0f7;
+  
+}
+h2:hover{
+    color: white; 
+    font-size:40px;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: rgb(150, 164, 228);
+}
+h3:hover{
+    background-color: rgb(255, 255, 255);
+    color:  #f8e5ed;
+    font-weight: bolder;
+}
+a:checked{
+    accent-color: red;
+  
+}
+h2{
+    color: rgb(150, 164, 228);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    grid-template-rows: repeat(9,2fr);
+    gap:10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+}
+.grid-item{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* height: 100px; */
+    width: 100%;
+    flex-direction: column;
+   
+}
+.grid-item:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /* animation:Rotate 0.2s forwards;  */
+}
+
+@keyframes Rotate {
+    0%{
+        transform: scale3d(x,y,z);
+    }
+    50%{
+        transform:rotateY(90deg);
+    }
+    100%{
+        transform:rotateY(180deg)
+        }
+    }
+    label,
+input[type='submit'] {
+      font-family: 'Courier New', Courier, monospace;
+  display: block;
+  margin-top: 1em;
+}
+
+*:read-write {
+    font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(253, 250, 218);
+  border: 5px solid rgb(255, 164, 202);
+  border-radius: 15px;
+  height: 400px;
+  width: 500px;
+  margin: auto;
+  color:rgb(224, 100, 141)
+  
+}
+img{
+    height:100px;
+    width:auto;
+}
+.image-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+            position: relative;
+            object-fit: cover; /*crop the image according to the grid*/
+        }
+        #two {
+            display: none; /* Initially hide the second image */
+        }
+        .image-container:hover #one {
+            display: none; /* Hide the first image on hover */
+        }
+
+        .image-container:hover #two {
+            display: block; /* Show the second image on hover */
+        }
+.p{
+    font-size: larger;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="header">
+    <img src="image\Untitled-1.png" alt="hehe">
+</div>
+</div>
+
+<div class="row">
+  <div class="column left">
+    <p><input type="checkbox" > ༘⋆✿ </p>
+    <p><input type="checkbox"> LOL</p>
+    <p><input type="checkbox"> ☾</p>
+    <p><input type="checkbox"> &hearts;</p>
+    <form>
+        <label for="note">tell me anything:
+        </label>
+
+        <textarea id="note" name="note">⋆⁺₊⋆ ☀︎ ⋆⁺₊⋆ hehehehehehehehe⋆⁺₊⋆ ☀︎ ⋆⁺₊⋆ </textarea>
+        <input type="submit" value="૮ ˶ᵔ ᵕ ᵔ˶ ა▄︻┻┳═一~♡︎" />
+      </form>
+      
+
+  </div>
+  <div class="column middle">
+    <div class="grid-container">
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+        <div class="grid-item"><img src="image\mejumping.png"></div>
+                
+    <div class="grid-item"><img src="image\mejumping.png"></div>
+    <div class="grid-item"><img src="image\mejumping.png"></div>
+    <div class="grid-item"><img src="image\mejumping.png"></div>
+    <div class="grid-item"><img src="image\mejumping.png"></div>
+    <div class="grid-item"><img src="image\mejumping.png"></div>
+
+</div>
+</div>
+  <div class="column right">
+    <h2>
+        BIGGER
+    </h2>
+    <h3>
+        THIS IS PURPLE 
+    </h3>
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+  <p>
+    <div class="grid-item image-container">
+        <img id='one' src='image\Untitled-2.png'>
+        <img id='two' src='image\Untitled-3.png'>
+    </div>
+    &hearts;⋆ ˚｡⋆୨ ʚɞ ୧⋆ ˚｡⋆ &hearts;
+
+  </p>
+</div>
+
+</body>
+</html>
+
+
